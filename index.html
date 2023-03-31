@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>DOM LAP</title>
+</head>
+<body>
+   
+   
+   
+    <h3>clicks:<span id="clicks">0</span></h3> 
+   <button type="button" onclick="add()">clicks here</button>
+   <button type="button" id="dont" onclick="delet()">dont clicks here</button>
+   
+   
+   
+   <!----event in DOM---->
+   <script>
+    let clicks = 0;
+    function add(){
+        clicks++;
+        document.getElementById("clicks").innerText = clicks;
+    }
+    let dont = 0;
+    function delet(){
+       clicks--;
+        document.getElementById("clicks").innerText = clicks;
+    }
+   </script>
+</body>
+</html>
